@@ -1,0 +1,716 @@
+#nav-logo-name{
+    font-size: 24px;
+}
+
+/* -----css for tickets----- */
+.table-responsive-tickets{
+margin-left: 12px;
+margin-right: 12px;
+border: 1px solid black;
+overflow-x: auto;
+max-height: 540px; 
+overflow-y: auto; 
+overflow-x: hidden; 
+}
+
+.btn-container {
+    width: 100%;
+    padding-right: 10px;
+    padding-left: 10px; 
+}
+
+button .btn-Tickets{
+  color: green;
+}
+
+.btn-tickets {
+  background-color: #0d962d;
+  color: white;
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn-tickets:hover {
+  background-color: #218838;
+}
+
+.btn-tickets:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(40, 167, 69, 0.5);
+}
+.th-itm{
+  text-align: left;
+}
+.td-items {
+  vertical-align: left;
+  text-align: left;
+}
+
+.actions-with-search {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.search-bar {
+  flex-grow: 1;
+  max-width: 280px; 
+  float: right;
+  height: 45px;
+}
+
+
+.filter-dropdown {
+    font-size: 13px; 
+    margin-top: 5px; 
+    margin-bottom: 5px; 
+}
+
+.table th, .table td {
+    padding: 8px; 
+    vertical-align: middle; 
+}
+
+.table thead th {
+    position: sticky;
+    top: 0;
+    background-color: #fff; 
+}
+
+.date-filter {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px; 
+  height: 35px;
+  justify-content: center; 
+}
+
+.date-input {
+  padding: 0 5px;
+  width: 40px !important;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  height: 30px !important; 
+  
+}
+
+.flex-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+    padding: 10px;
+}
+.pagination-container {
+    margin-top: 0; 
+    margin-right: 10px; 
+}
+#dropdownContainer select {
+  width: 120px; 
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+/* ------ modal for tickets ----- */
+
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.5);
+ 
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: auto; 
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%; 
+  max-width: 600px;
+  position: relative;
+  margin-top: 100px;
+}
+
+.ticketdetails_title{
+  margin-top: 18px;
+  margin-bottom: 10px;
+}
+
+.close {
+  color: #aaa;
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.btn-info {
+  background-color: green !important;
+  color: white !important;
+  border-color: darkgreen !important;
+}
+
+.btn-info:hover{
+  background-color: rgb(0, 93, 0) !important;
+}
+
+
+/* ----- for edit modal style -----*/
+
+
+
+/* ----- for approve and resched modal style -----*/
+
+.approve-modal-close-btn {
+  color: #aaa;
+  float: right; 
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+  position: absolute;
+  top: 5px;
+  right: 20px;
+}
+
+.approve-modal-close-btn:hover,
+.approve-modal-close-btn:focus {
+  color: black;
+  text-decoration: none;
+}
+.resched-modal-close-btn {
+  color: #aaa;
+  float: right; 
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+  position: absolute;
+  top: 5px;
+  right: 20px;
+}
+
+.resched-modal-close-btn:hover,
+.resched-modal-close-btn:focus {
+  color: black;
+  text-decoration: none;
+}
+
+#approve-modal-label{
+  margin-top: 20px;
+}
+.modal-datepicker-button{
+  background-color: #0d962d;
+  color: white;
+  padding: 6px 12px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.modal-datepicker-button:hover{
+background-color: #218838;
+}
+
+.modal-datepicker {
+  display: block !important;
+  width: calc(100% - 24px) !important; 
+  padding: 8px 12px !important;
+  margin-top: 10px !important;
+  margin-bottom: 20px !important;
+  border: 1px solid #ccc !important;
+  border-radius: 4px !important;
+  box-sizing: border-box !important;
+  background-color: #fff;
+  font-family: Arial, sans-serif !important; 
+  font-size: 16px !important;
+  color: #333 !important;
+}
+
+.modal-datepicker:focus {
+  border-color: #004085 !important; 
+  outline: none !important; 
+}
+
+.modal-datepicker:hover {
+  border-color: #0056b3 !important;
+}
+
+/* -----Style for Schedule----- */
+
+
+.schedule-scrollable {
+  max-height: inherit; 
+}
+
+.schedule-container {
+  margin-right: 100px;
+  margin-left: 100px;
+  padding-right: 10px;
+  padding-right: 10px;
+  height: calc(100vh - 150px); 
+  overflow-y: auto;
+}
+
+.schedule-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  padding: 10px 20px;
+  margin-bottom: 20px;
+  padding: 20px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  background: #fff;}
+
+.date-info {
+  flex-basis: 15%; 
+  text-align: center; 
+}
+.month{
+  font-size: 20px;
+}
+.day-large {
+  font-size: 50px;
+  font-weight: bold;
+}
+.year{
+  font-size: 20px;
+}
+
+.item-info {
+  flex-grow: 1;
+  padding: 0 20px;
+}
+
+.schedule-item img {
+  width: 300px;
+  height: 150px;
+  margin-left: 20px;
+}
+
+
+.ticket-info h3 {
+  margin-bottom: 10px; /* Lagyan ng space sa pagitan ng ticket ID at description */
+}
+
+.description-container {
+  max-height: 100px; /* Itakda ang maximum na taas ng description */
+  overflow-y: auto; /* Magdagdag ng scrollbar kapag lumampas na sa maximum na taas */
+}
+
+
+.item-info h2, .item-info p, .date {
+  margin: 0;
+}
+
+.date {
+  font-size: 25px; 
+  color: #333; 
+}
+
+
+.report-content {
+  width: 500px;
+  margin: auto;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+  margin-top: 10px;
+  margin-bottom: 50px;
+
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  
+}
+
+input[type="text"], input[type="date"], select, input[type="radio"] + label {
+  width: 100%;
+  padding: 8px;
+  margin: 3px 0 10px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type="radio"], input[type="radio"] + label {
+  width: auto;
+  margin-right: 10px;
+  padding: 0;
+}
+
+input[type="submit"] {
+  width: 100%;
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #45a049;
+}
+
+
+/* ----- report ----- */
+
+
+    .report-content {
+        max-width: 600px;
+        margin: 20px auto;
+        background: #ffffff;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    h2 {
+        color: #333;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .report-form-group {
+        margin-bottom: 10px;
+    }
+
+    label {
+        display: block;
+        font-weight: 600;
+        color: #555;
+    }
+
+    input[type="text"],
+    input[type="date"],
+    select {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+        margin-top: 2px;
+    }
+
+    input[type="submit"] {
+        width: 100%;
+        padding: 10px;
+        background-color: #0056b3;
+        color: white;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        font-size: 16px;
+    }
+
+    input[type="submit"]:hover {
+        background-color: #004494;
+    }
+
+    input[type="radio"] {
+        margin-right: 10px;
+    }
+
+    @media (max-width: 768px) {
+        .report-content {
+            margin: 10px;
+            padding: 15px;
+        }
+    }
+   
+
+
+    /* ----- user-request-ticket ----- */
+ 
+    h2 {
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+    padding-top:10px;
+}
+
+.user-report-form {
+width: 500px;
+margin: 20px auto;
+padding: 20px;
+box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+background: #ffffff;
+border-radius: 8px;
+}
+
+@media (max-width: 768px) {
+.user-report-form {
+    width: auto; 
+    margin: 10px;
+    padding: 15px;
+}
+}
+
+
+.user-report-form-group, .user-report-radio-group {
+margin-bottom: 20px;
+}
+
+
+.user-report-label, .user-report-radio-label {
+display: block;
+margin-bottom: 5px;
+font-weight: 600;
+color: #555;
+}
+
+
+.user-report-input, 
+.user-report-select, 
+.user-report-textarea {
+width: 100%;
+padding: 10px;
+margin-top: 2px;
+border: 1px solid #ccc;
+border-radius: 4px;
+box-sizing: border-box;
+}
+
+.user-report-radio {
+margin-right: 5px;
+}
+
+.user-report-radio + .user-report-radio-label {
+display: inline-block; 
+margin-right: 10px; 
+padding: 0;
+}
+
+.user-report-submit {
+width: 100%;
+padding: 10px;
+background-color: #0056b3; 
+color: white;
+border: none;
+border-radius: 4px;
+cursor: pointer;
+font-size: 16px;
+}
+
+.user-report-submit:hover {
+background-color: #004494;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* ------- CSS for Department -------- */
+
+.department-responsive {
+  margin-left: 12px;
+  margin-right: 12px;
+  border: 1px solid black;
+  overflow-x: auto;
+  max-height: 540px; 
+  overflow-y: auto; 
+  overflow-x: hidden; 
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 10px;
+}
+
+.btn-department {
+  background-color: #0d962d;
+  color: white;
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn-department:hover {
+  background-color: #218838;
+}
+
+.btn-department:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(40, 167, 69, 0.5);
+}
+
+/* edit modal department */
+
+#editDepartmentModal .modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0,0,0,0.4);
+}
+
+
+#editDepartmentModal .modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 10px;
+}
+
+#editDepartmentModal .modal-body {
+  padding: 20px;
+}
+
+#editDepartmentModal .modal-title {
+  margin: 0;
+}
+
+#editDepartmentModal .btn-close {
+  cursor: pointer;
+  border: none;
+  background: none;
+  font-size: 1.5em;
+}
+
+#editDepartmentModal .btn {
+  display: inline-block;
+  padding: 8px 16px;
+  margin-top: 10px;
+  font-size: 14px;
+  cursor: pointer;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+}
+
+#editDepartmentModal .form-control {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+#editDepartmentModal .mb-3 {
+  margin-bottom: 16px;
+}
+
+#editDepartmentModal .modal-backdrop {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: transparent;
+}
+
+
+
+/* ------- CSS for Category -------- */
+
+.category-responsive {
+  margin-left: 12px;
+  margin-right: 12px;
+  border: 1px solid black;
+  overflow-x: auto;
+  max-height: 540px; 
+  overflow-y: auto; 
+  overflow-x: hidden; 
+}
+
+.btn-category {
+  background-color: #0d962d;
+  color: white;
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn-category:hover {
+  background-color: #218838;
+}
+
+.btn-category:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(40, 167, 69, 0.5);
+}
+
+
+
+/* ------ view user ------ */
+
+.user-responsive {
+  margin-left: 12px;
+  margin-right: 12px;
+  border: 1px solid black;
+  overflow-x: auto;
+  max-height: 540px; 
+  overflow-y: auto; 
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 10px;
+}
+
+.btn-user {
+  background-color: #0d962d;
+  color: white;
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn-user:hover {
+  background-color: #218838;
+}
+
+.btn-user:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(40, 167, 69, 0.5);
+}
